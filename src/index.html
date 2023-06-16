@@ -2,6 +2,73 @@
 layout: layouts/base.html
 title: Home
 permalink: /
+image: /assets/test.jpg
 ---
 
-welcome!
+<div class="row g-0">
+  <aside class="col-12 col-lg-6 position-relative" style="max-height: 90vh">
+    <img
+      style="height: 90vh; object-fit: cover; object-position: left; width: 100%;"
+      class="img-fluid"
+      src="{{ image }}"
+      alt=""
+    />
+    <div
+      class="h-100 w-100 position-absolute start-0 top-0 left z-1"
+      style="background-color: rgba(0, 0, 0, 0.5)"
+    ></div>
+    <div
+      class="position-absolute bottom-0 start-50 translate-middle text-center z-1"
+    >
+      <img class="w-50" src="/assets/realaer-logo-lg-white.png" alt="" />
+      <h1 class="fs-3">
+        Real influence <br />
+        for Real people
+      </h1>
+    </div>
+  </aside>
+  <section class="col-12 col-lg-6" style="height: 90vh; overflow-y: scroll">
+    <div class="container">
+      <div class="row g-0 justify-content-between">
+        <div class="col-12 col-lg-6  p-1  ">
+      <a class=" position-relative d-block "  href="#">
+        
+        <img style="object-fit: cover;" class="img-fluid rounded-3" src="/assets/test-5.jpg" alt="">
+
+
+      <div class="position-absolute w-100 top-0 text-center p-3" style="background-color: rgba(0, 0, 0, 0.5);">
+        <h6 class="fs-5">Category here</h6>
+      </div>
+
+      <div class="position-absolute bottom-0 start-50 translate-middle-x w-100 p-3" style="background-color: rgba(0, 0, 0, 0.5);">
+        <h3 class="text-uppercase fs-4">the title goes here and here</h2>
+      </div>
+
+      </a>
+      
+        
+      </div>
+      <div class="col-12 col-lg-6  p-1  ">
+        <a class=" position-relative d-block "  href="#">
+          
+          <img style="object-fit: cover;" class="img-fluid rounded-3" src="/assets/test-5.jpg" alt="">
+  
+  
+        <div class="position-absolute w-100 top-0 text-center p-3" style="background-color: rgba(0, 0, 0, 0.5);">
+          <h6 class="fs-5">Category here</h6>
+        </div>
+  
+        <div class="position-absolute bottom-0 start-50 translate-middle-x w-100 p-3" style="background-color: rgba(0, 0, 0, 0.5);">
+          <h3 class="text-uppercase fs-4">the title goes here and here</h2>
+        </div>
+  
+        </a>
+        
+          
+        </div>
+   
+
+      
+    </div>
+  </section>
+</div>

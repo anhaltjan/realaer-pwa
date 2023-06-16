@@ -24,6 +24,7 @@
     <header>
       <nav
   class="d-flex justify-content-between align-items-center py-1 container-fluid"
+  style="height: 10vh"
 >
   <div class="">Home</div>
   <div class="">
@@ -63,8 +64,8 @@
   </div>
   <div class="offcanvas-body">
     <ul
-      class="navbar-nav justify-content-end flex-grow-1 pe-3 text-uppercase fw-medium"
-      style="letter-spacing: 2px"
+      class="navbar-nav justify-content-end flex-grow-1 gap-3 pb-5 text-uppercase fw-medium"
+      style="letter-spacing: 2.5px"
     >
       <li class="nav-item">
         <a class="nav-link" href="/">Home</a>
@@ -75,7 +76,7 @@
       <li class="nav-item">
         <a class="nav-link" href="/formal">Formal</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item d-none">
         <a class="nav-link" href="/watches-n-jewellery">Watches & Jewellery</a>
       </li>
       <li class="nav-item">
@@ -83,10 +84,10 @@
           >Lingerie & Intimates (18+)</a
         >
       </li>
-      <li class="nav-item">
+      <li class="nav-item d-none">
         <a class="nav-link" href="/cosmetics-n-perfume">Cosmetics & Perfume</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item d-none">
         <a class="nav-link" href="/food-n-beverage">Food & Beverage</a>
       </li>
       <li class="nav-item">
@@ -94,14 +95,14 @@
           >Marketing & Retailing</a
         >
       </li>
-      <li class="nav-item">
+      <li class="nav-item d-none">
         <a class="nav-link" href="/music-n-art">Music & Art</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item d-none">
         <a class="nav-link" href="/other">Other</a>
       </li>
 
-      <li class="nav-item dropdown bg-white text-black">
+      <li class="nav-item dropdown">
         <a
           class="nav-link dropdown-toggle"
           href="#"
@@ -111,20 +112,24 @@
         >
           More
         </a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="/about-realaer">About</a></li>
+        <ul class="dropdown-menu bg-white">
           <li>
-            <a class="dropdown-item" href="/terms-n-conditions"
+            <a class="dropdown-item text-black" href="/about-realaer">About</a>
+          </li>
+          <li>
+            <a class="dropdown-item text-black" href="/terms-n-conditions"
               >Terms & Conditions</a
             >
           </li>
           <li>
-            <a class="dropdown-item" href="/privacy-policy">Privacy Policy</a>
+            <a class="dropdown-item text-black" href="/privacy-policy"
+              >Privacy Policy</a
+            >
           </li>
           <li>
             <hr class="dropdown-divider" />
           </li>
-          <li><a class="dropdown-item" href="/news">News</a></li>
+          <li><a class="dropdown-item text-black" href="/news">News</a></li>
         </ul>
       </li>
     </ul>
@@ -148,7 +153,73 @@
     </header>
     
     <main>
-welcome!
+<div class="row g-0">
+  <aside class="col-12 col-lg-6 position-relative" style="max-height: 90vh">
+    <img
+      style="height: 90vh; object-fit: cover; object-position: left; width: 100%;"
+      class="img-fluid"
+      src="/assets/test.jpg"
+      alt=""
+    />
+    <div
+      class="h-100 w-100 position-absolute start-0 top-0 left z-1"
+      style="background-color: rgba(0, 0, 0, 0.5)"
+    ></div>
+    <div
+      class="position-absolute bottom-0 start-50 translate-middle text-center z-1"
+    >
+      <img class="w-50" src="/assets/realaer-logo-lg-white.png" alt="" />
+      <h1 class="fs-3">
+        Real influence <br />
+        for Real people
+      </h1>
+    </div>
+  </aside>
+  <section class="col-12 col-lg-6" style="height: 90vh; overflow-y: scroll">
+    <div class="container">
+      <div class="row g-0 justify-content-between">
+        <div class="col-12 col-lg-6  p-1  ">
+      <a class=" position-relative d-block "  href="#">
+        
+        <img style="object-fit: cover;" class="img-fluid rounded-3" src="/assets/test-5.jpg" alt="">
+
+
+      <div class="position-absolute w-100 top-0 text-center p-3" style="background-color: rgba(0, 0, 0, 0.5);">
+        <h6 class="fs-5">Category here</h6>
+      </div>
+
+      <div class="position-absolute bottom-0 start-50 translate-middle-x w-100 p-3" style="background-color: rgba(0, 0, 0, 0.5);">
+        <h3 class="text-uppercase fs-4">the title goes here and here</h2>
+      </div>
+
+      </a>
+      
+        
+      </div>
+      <div class="col-12 col-lg-6  p-1  ">
+        <a class=" position-relative d-block "  href="#">
+          
+          <img style="object-fit: cover;" class="img-fluid rounded-3" src="/assets/test-5.jpg" alt="">
+  
+  
+        <div class="position-absolute w-100 top-0 text-center p-3" style="background-color: rgba(0, 0, 0, 0.5);">
+          <h6 class="fs-5">Category here</h6>
+        </div>
+  
+        <div class="position-absolute bottom-0 start-50 translate-middle-x w-100 p-3" style="background-color: rgba(0, 0, 0, 0.5);">
+          <h3 class="text-uppercase fs-4">the title goes here and here</h2>
+        </div>
+  
+        </a>
+        
+          
+        </div>
+   
+
+      
+    </div>
+  </section>
+</div>
 </main>
     
   </body>
