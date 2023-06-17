@@ -23,10 +23,15 @@ $body-bg: #000000;
 
 // Create your own map
 $custom-colors: (
-  'primary-str': #8c43af,
-  'primary-for': #ff005c,
   'str': #fbf78c,
-  'for': #f9f0dd,
+  'for': #eda38c,
+  'wnj': linear-gradient(90deg, #f1dfaf -8.08%, #a49a77 105.24%),
+  'lni': #e3bc9a,
+  'cnp': #ff87ec,
+  'din': #3bc951,
+  'mnr': #faff00,
+  'mna': #6948ef,
+  'oth': #00e492,
 );
 
 // Merge the maps
