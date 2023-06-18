@@ -12,7 +12,7 @@ layout: layouts/base.html
     </div>
 
     <div class=" col-12 col-lg-7 px-1 py-3">
-      <h1 class="lh-lg">some text about the title goes here</h1>
+      <h1 class="text-uppercase fw-bold" style="line-height: 3.5rem;">some text about the title goes here</h1>
       <h3 class="fs-4 fw-bold text-uppercase text-primary">Category here</h3>
       <div class="my-3">
         <h6>By: <bdi>Jan Anhalt</bdi></h6>
@@ -31,7 +31,10 @@ layout: layouts/base.html
             <a  style="text-decoration: none;" class="d-flex gap-2 flex-column justify-content-center align-items-center " href=""><i class="bi bi-instagram fs-4"></i>Share</a>
           </span class="col">
           <span class="col">
-            <a  style="text-decoration: none;" class="d-flex gap-2 flex-column justify-content-center align-items-center " href="">
+            <a  
+              style="text-decoration: none;" 
+              class="d-flex gap-2 flex-column justify-content-center align-items-center " 
+              onclick="window.print()">
                   <i class="bi bi-printer-fill fs-4"></i>
                   Print
             </a>
@@ -57,6 +60,6 @@ layout: layouts/base.html
     <div class="col-12  p-5 rounded-4" style="background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.1) 50%); line-height: 28.5px; text-align: justify;">
       {{ content | safe }}
     </div>
-    
+
   </div>
 </div>
