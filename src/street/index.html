@@ -1,28 +1,28 @@
 ---
-layout: /layouts/basecategory.html
+layout: layouts/category.html
 title: Street
 pagination:
   data: collections.street
   size: 3
   alias: articles
 ---
-
-{% for street in articles %} {% if page.url == post.url %}aria-current="page"{%
-endif %} 
-
-<div class="col-12 col-lg-4 " style="margin-bottom: 4em;">
-      <a class=" position-relative d-block rounded-4 "  href="{{ street.url }}">
-         <div class="ratio rounded-3" style="aspect-ratio: 9/16;">      
-        <img style="object-fit: cover;" class="img-fluid rounded-4" src="{{ street.data.image }}" alt="">
-        </div> 
-        <div class="position-absolute w-100 top-0 text-center p-3 " style="background-color: rgba(0, 0, 0, 0.5); backdrop-filter: blur(10px); border-radius: 1rem 1rem 0 0;">
-          <h6 class="fs-5">{{ street.data.category }}</h6>
-        </div>
+{%- for post in articles -%}
+<li{% if page.url == post.url %} aria-current="page"{% endif %} class="col-12 col-lg-4  rounded-2 mb-4">
+      <a class=" position-relative d-block"  href="{{ post.url }}">
         
-        <div class="position-absolute bottom-0 start-50 translate-middle-x w-100 p-3" style="background-color: rgba(0, 0, 0, 0.5); backdrop-filter: blur(10px); border-radius: 0 0 1rem 1rem;">
-          <h3 class="text-uppercase fs-4">  {{ street.data.title }}</h2>
-        </div>
-      </a>
-    </div>
+        <img style="aspect-ratio: 9/16; object-fit: cover;" class="ratio img-fluid rounded-3" src="{{ post.data.image }}" alt="">
 
-{% endfor %}
+
+      <div 
+        class="position-absolute w-100 top-0 text-center p-3 rounded-top" 
+        style="background-color: rgba(0, 0, 0, 0.5); backdrop-filter: blur(10px);">
+        <h6 class="fs-4 text-uppercase fw-bold">{{ post.data.category }}</h6>
+      </div>
+
+      <div class="position-absolute bottom-0 start-0  w-100 p-3 rounded-bottom " style="background-color: rgba(0, 0, 0, 0.5); backdrop-filter: blur(10px);">
+        <h3 class="text-uppercase fs-2 fw-bold">{{ post.data.title }}</h2>
+      </div>
+
+      </a>
+</li>
+{%- endfor -%}

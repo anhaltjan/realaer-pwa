@@ -1,0 +1,48 @@
+---
+layout: layouts/base.html
+---
+
+<div class="container" >
+  <ul class="row justify-content-center align-items-center px-5 py-3 mb-5" style="list-style: none">
+    {{ content | safe }}
+  </ul>
+
+  <!-- PAGINATION -->
+  <nav aria-label="Page navigation" class="position-fixed bottom-0 start-0 w-100 text-center"> 
+    <ul class="pagination container px-4 gap-2">
+      <li class="page-item w-100">
+        {% if pagination.href.previous %}
+        <a 
+        style="display: block; background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.1) 50%);" 
+          class="page-link d-block border-0" 
+          href="{{ pagination.href.previous }}"
+        >
+          Previous
+        </a>
+        {% else %}{% endif %}
+      </li>
+  
+      {%- for pageEntry in pagination.pages %}
+      <li class="page-item ">
+        <a 
+        style="display: block; background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.1) 50%);" 
+          class="page-link border-0" 
+          href="{{ pagination.hrefs[ loop.index0 ] }}"
+          {% if page.url == pagination.hrefs[ loop.index0 ] %} aria-current="page"{% endif %}
+        > 
+          {{ loop.index }}
+        </a>
+      </li>
+      {%- endfor %}
+      <li class="page-item w-100">
+        {% if pagination.href.next %}
+        <a 
+          class="page-link border-0"
+          style="display: block; background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.1) 50%);" 
+          href="{{ pagination.href.next }}"
+        >
+          Next
+        </a>{% else %}{% endif %}</li>
+    </ul>
+  </nav>
+</div>
