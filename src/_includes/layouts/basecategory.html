@@ -1,4 +1,6 @@
-{% extends "layouts/base.html" %}
+{% extends "layouts/base.html" %} {% block head %}
+<meta name="description" content="{{description}}" />
+{% endblock %} {% block content %}
 <div class="container" style="height: 90vh">
   <section class="row g-0">{{ content | safe }}</section>
 </div>
@@ -52,3 +54,4 @@
     </li>
   </ul>
 </nav>
+{% block content %}
