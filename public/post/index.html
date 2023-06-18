@@ -60,6 +60,9 @@
   crossorigin="anonymous"
 ></script>
 
+<!-- Meta (Facebook) SDK -->
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v13.0" nonce="YOUR_NONCE_VALUE"></script>
+
 <title>Realaer | post</title>
   
   </head>
@@ -225,7 +228,14 @@
             <a  style="text-decoration: none;" class="d-flex gap-2 flex-column justify-content-center align-items-center " href=""><i class="bi bi-twitter fs-4"></i>Tweet</a>
           </span>
           <span class="col">
-            <a  style="text-decoration: none;" class="d-flex gap-2 flex-column justify-content-center align-items-center " href=""><i class="bi bi-facebook fs-4"></i>Post</a>
+            <a  
+              style="text-decoration: none;" 
+              class="d-flex gap-2 flex-column justify-content-center align-items-center " 
+              data-href="https://realaer.netlify.app/" 
+            >
+              <i class="bi bi-facebook fs-4"></i>
+              Post
+            </a>
           </span>
           <span class="col">
             <a  style="text-decoration: none;" class="d-flex gap-2 flex-column justify-content-center align-items-center " href=""><i class="bi bi-instagram fs-4"></i>Share</a>
@@ -259,6 +269,21 @@
 
     <div class="col-12  p-5 rounded-4" style="background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.1) 50%); line-height: 28.5px; text-align: justify;">
       
+<div
+  class="fb-share-button"
+  data-href="https://realaer.netlify.app/"
+  data-layout="button"
+  data-size="large"
+>
+  <a
+    target="_blank"
+    rel="noopener noreferrer"
+    href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Frealaer.netlify.app%2F&amp;src=sdkpreparse"
+    class="fb-xfbml-parse-ignore"
+    >Share</a
+  >
+</div>
+
     </div>
 
   </div>
