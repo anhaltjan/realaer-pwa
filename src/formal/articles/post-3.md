@@ -7,8 +7,8 @@ title: Post 3
 description: This is an Attire
 date: '2012-04-06'
 author: Jan Anhalt
-category: street
+category: formal
 
 tags:
 
-- street
+- formal

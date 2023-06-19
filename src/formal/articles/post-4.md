@@ -6,9 +6,9 @@ title: Post 4
 description: This is an Attire
 date: '2012-04-06'
 author: Jan Anhalt
-category: Denim
+category: formal
 
 tags:
-  - street
+  - formal
   - new
 ---

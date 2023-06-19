@@ -1,5 +1,4 @@
 ---
-
 layout: /layouts/article.html
 image: /assets/test-2.jpg
 alt: 'ck girl'
@@ -10,5 +9,5 @@ author: Jan Anhalt
 category: lip stick
 
 tags:
-
-- cosmetics
+  - cosmetics
+---
