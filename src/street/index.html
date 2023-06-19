@@ -10,7 +10,7 @@ pagination:
 <li{% if page.url == post.url %} aria-current="page"{% endif %} class="col-12 col-lg-4  rounded-2 mb-4">
       <a class=" position-relative d-block"  href="{{ post.url }}">
         
-        <img style="aspect-ratio: 9/16; object-fit: cover;" class="ratio img-fluid rounded-3" src="{{ post.data.image }}" alt="">
+        <img style="aspect-ratio: 9/16; object-fit: cover;" class="ratio img-fluid rounded-3" src="{{ post.data.image }}" alt="{{post.data.alt}}">
 
 
       <div 

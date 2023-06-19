@@ -6,7 +6,7 @@ pagination:
   size: 3
   alias: articles
 ---
-{%- for post in articles -%}
+{%- for post in articles | reverse  -%}
 <li{% if page.url == post.url %} aria-current="page"{% endif %} class="col-12 col-lg-4  rounded-2 mb-4">
       <a class=" position-relative d-block"  href="{{ post.url }}">
         
