@@ -1,0 +1,71 @@
+---
+layout: layouts/base.html
+title: Contact Us
+image: /assets/test-2.jpg
+---
+
+<section class="position-relative">
+  <img
+    class="img-fluid w-100"
+    style="height: 82vh; object-fit: cover; object-position: center"
+    src="{{image}}"
+    alt=""
+  />
+  <h1
+    class="position-absolute top-50 start-50 translate-middle z-2 display-1 fw-bold text-uppercase text-center"
+    style="
+      background: linear-gradient(90deg, #f1dfaf -8.08%, #a49a77 105.24%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    "
+  >
+    {{ title }}
+  </h1>
+  <div
+    class="position-absolute w-100 h-100 top-0 start-0 z-1"
+    style="background-color: rgba(0, 0, 0, 0.5)"
+  ></div>
+</section>
+<section class="container my-5" style="max-width: 600px">
+  <div class="">
+    <form name="contact" method="POST" netlify>
+      <div class="form-floating">
+        <input
+          type="text"
+          class="form-control mb-3"
+          id="floatingInput"
+          placeholder="John Wick"
+        />
+        <label for="floatingInput">Full Name</label>
+      </div>
+      <div class="form-floating">
+        <input
+          type="email"
+          class="form-control mb-3"
+          id="floatingInput"
+          placeholder="name@gmail.com"
+        />
+        <label for="floatingInput">Email address</label>
+      </div>
+      <div class="form-floating">
+        <textarea
+          class="form-control mb-3"
+          placeholder="Leave your message here"
+          id="floatingTextarea2"
+          style="height: 100px"
+        ></textarea>
+        <label for="floatingTextarea2">Message</label>
+      </div>
+      <div class="text-center">
+        <button
+          type="submit"
+          class="btn btn-secondary d-grid w-100 text-uppercase fw-medium"
+        >
+          Send Now
+        </button>
+      </div>
+    </form>
+  </div>
+</section>
