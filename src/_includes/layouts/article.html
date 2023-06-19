@@ -4,21 +4,29 @@ layout: layouts/base.html
 
 <div class="container my-4">
   <div class="row g-0">
-
-    <div class=" col-12 col-lg-5 bg-black p-3">
-      <div class="ratio" style="aspect-ratio: 9/16;">
-            <img class="img-fluid rounded-4" style="object-fit: cover; object-position: center;" src="/assets/test.jpg" alt="" />
+    <div class="col-12 col-lg-5 bg-black p-3">
+      <div class="ratio" style="aspect-ratio: 9/16">
+        <img
+          class="img-fluid rounded-4"
+          style="object-fit: cover; object-position: center"
+          src="{{ post.data.image }}"
+          alt="{{ post.data.alt }}"
+        />
       </div>
     </div>
 
-    <div class=" col-12 col-lg-7 px-1 py-3">
-      <h1 class="text-uppercase fw-bold" style="line-height: 3.5rem;">some text about the title goes here</h1>
-      <h3 class="fs-4 fw-bold text-uppercase text-primary">Category here</h3>
+    <div class="col-12 col-lg-7 px-1 py-3">
+      <h1 class="text-uppercase fw-bold" style="line-height: 3.5rem">
+        {{ post.data.title }}
+      </h1>
+      <h3 class="fs-4 fw-bold text-uppercase text-primary">
+        {{ post.data.category }}
+      </h3>
       <div class="my-3">
-        <h6>By: <bdi>Jan Anhalt</bdi></h6>
-        <time>6-16-2023</time>
+        <h6>By: <bdi>{{ post.data.author }}</bdi></h6>
+        <time>{{ post.data.date }}</time>
       </div>
-      <div style="background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.1) 50%);" class=" text-uppercase p-3 rounded-4">
+      <!--       <div style="background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.1) 50%);" class=" text-uppercase p-3 rounded-4">
         <h4 class="text-center mb-4">share now</h4>
         <div class="row">
           <span class="col">
@@ -47,26 +55,60 @@ layout: layouts/base.html
             </a>
           </span>
         </div>
-      </div>
-      <div class="  p-5 rounded-4 my-4 lh-lg" style="background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.1) 50%); text-align: justify; font-size: 1.05rem;" >
-        <p>    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates illum vel sit itaque ipsam totam libero vitae nisi adipisci, ipsum in illo, voluptatem praesentium sint possimus reiciendis tenetur impedit qui ab doloribus nemo asperiores. Soluta unde, maxime quas laboriosam dolores accusamus. </p>
-    
+      </div> -->
+      <div
+        class="p-5 rounded-4 my-4 lh-lg"
+        style="
+          background: linear-gradient(
+            180deg,
+            rgba(255, 255, 255, 0.2) 0%,
+            rgba(255, 255, 255, 0.1) 50%
+          );
+          text-align: justify;
+          font-size: 1.05rem;
+        "
+      >
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+          illum vel sit itaque ipsam totam libero vitae nisi adipisci, ipsum in
+          illo, voluptatem praesentium sint possimus reiciendis tenetur impedit
+          qui ab doloribus nemo asperiores. Soluta unde, maxime quas laboriosam
+          dolores accusamus.
+        </p>
       </div>
       <div class="my-4">
-        <a 
-          href="/" 
-          class="rounded-3 p-2 d-flex justify-content-center gap-2 align-items-center text-center text-white fw-medium" 
-          style="background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.1) 50%); font-size: 1.05rem; text-decoration: none;" 
+        <a
+          href="{{ post.data.youtube }}"
+          class="rounded-3 p-2 d-flex justify-content-center gap-2 align-items-center text-center text-white fw-medium"
+          style="
+            background: linear-gradient(
+              180deg,
+              rgba(255, 255, 255, 0.2) 0%,
+              rgba(255, 255, 255, 0.1) 50%
+            );
+            font-size: 1.05rem;
+            text-decoration: none;
+          "
         >
-          <i style="color: #FF0000;" class="bi bi-youtube fs-4"> </i>
+          <i style="color: #ff0000" class="bi bi-youtube fs-4"> </i>
           Watch Now on Youtube
         </a>
       </div>
     </div>
 
-    <div class="col-12  p-5 rounded-4" style="background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.1) 50%); line-height: 28.5px; text-align: justify;">
+    <div
+      class="col-12 p-5 rounded-4"
+      style="
+        background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0.2) 0%,
+          rgba(255, 255, 255, 0.1) 50%
+        );
+        line-height: 28.5px;
+        text-align: justify;
+      "
+    >
       {{ content | safe }}
     </div>
-
   </div>
 </div>
