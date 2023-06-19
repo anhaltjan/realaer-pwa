@@ -7,7 +7,7 @@ description: This is an Attire
 date: '2012-04-07'
 author: Jan Anhalt
 category: Denim
-
+permalink: /{{ title | slugify }}/
 tags:
   - street
 ---
