@@ -6,9 +6,9 @@ title: Post CK
 description: This is an Attire
 date: '2012-04-06'
 author: Jan Anhalt
-category: Denim
+category: other
 
 tags:
-  - street
+  - other
   - new
 ---
